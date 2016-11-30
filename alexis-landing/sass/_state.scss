@@ -1,0 +1,20 @@
+nav.on-scroll{
+  background-color: #fff;
+  position: fixed;
+  top:0;
+  z-index: 100;
+  @include set-box-shadow($blur:24px);
+  .logo-img{
+    width: 97px;
+    height: 27px;
+    display: inline-block;
+    background: url("../img/icons/logo.png") 0 -9px no-repeat;
+  }
+  .menu{
+    &-item{
+      a{
+        color:$black-text;
+      }
+    }
+  }
+}

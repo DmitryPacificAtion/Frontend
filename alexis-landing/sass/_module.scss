@@ -1,0 +1,179 @@
+.first-screen {
+  .menu {
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+    @include respond-to ($pda-lan) {
+      margin-right: 0;
+      @include set-cols-width(10);
+    }
+    &-item {
+      display: inline-block;
+      padding: 0 10px;
+      text-align: center;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  nav .logo {
+    @include set-cols-width(2);
+    &-img {
+      background: url("../img/icons/logo.png") 0 -50px no-repeat;
+      display: inline-block;
+      height: 27px;
+      width: 97px;
+    }
+  }
+  .container {
+    padding-top: 175px;
+  }
+  .features {
+    text-align: center;
+    div:before {
+      content:'';
+      height: 40px;
+      width: 40px;
+    }
+    .fixed-price, .recieve-time,.satisfaction {
+      display: inline-block;
+      font: 18px 'Poppins', 'Verdana', sans-serif;
+      margin: 35px auto 175px;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: top;
+      width: 30%;
+      i {
+        height: 40px;
+        margin: 0 auto 40px;
+        width: 40px;
+      }
+    }
+    .fixed-price {
+      color: $green-text;
+      i {
+        background-position: 0 -1px;
+      }
+    }
+    .recieve-time {
+      color:$purple-text;
+      i {
+        background-position: -42.5px 0px;
+      }
+    }
+    .satisfaction {
+      color: $orange-text;
+      i {
+        background-position: -85px 0px;
+      }
+    }
+  }
+}
+.about_us {
+  &-photo {
+    position: absolute;
+    z-index: 1;
+    @include set-cols-width(6, none);
+    img {
+      max-height: 700px;
+      max-width: 555px;
+    }
+  }
+  &-content {
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    @include set-box-shadow($color: rgba(0, 0, 0, 0.05));
+    @include set-cols-width(7, right, 0);
+  }
+  &-descr {
+    padding: 0 70px 75px;
+    z-index: 10;
+    h2:before{
+      content:'01';
+      top: -102px;
+      left: -3px;
+    }
+  }
+}
+.our_focus {
+  text-align: center;
+  padding-bottom: 150px; 
+  .container {
+    padding:30px 0 0;
+  }
+  &-header{
+    position: relative;
+    z-index: 5;
+  }
+  h2:before {
+    color: $light-gray-bg-num;
+    content:'02';
+    bottom: -105px;
+    display: inline-block;
+    left: 50%;
+    margin-left: -180px;
+   }
+  &-item {
+    background: #fff;
+    display: inline-block;
+    margin: 0 1%;
+    max-width: 265px;
+    width: 20%;
+    p {
+      padding: 0 15px;
+      line-height: 25px; 
+    }
+    .web, .ux, .photo, .app { 
+      width: 56px;
+      height: 48px;
+      margin: 60px auto 30px;
+    }
+    .web {
+      background-position: -128px 6px;
+    }
+    .ux {
+      background-position: -187px -2px;
+    }
+    .photo {
+      background-position: -245px 5px;
+    }
+    .app {
+      background-position: -300px 3px;
+    }
+    @include respond-to($medium) {
+      margin: 1% 2.5%;
+      max-width: none;
+      width: 40%;
+    }
+  }
+}
+.footer-rainbow {
+  .green-line, .orange-line, .purple-line, .red-line {
+    @include set-cols-width(3);
+     @at-root {
+      .green-line, .orange-line, .purple-line, .red-line { height: 3px; }
+      .green-line { background-color: $green-text;}
+      .orange-line { background-color: $orange-text;}
+      .purple-line { background-color: $purple-text;}
+      .red-line { background-color: $red-text;}
+     }
+  }
+}
+
+// **** SVG **** //
+.green-svg {
+ fill: $green-text;
+}
+.orange-svg {
+  fill: $orange-text;
+}
+.purple-svg {
+ fill: $purple-text;
+}
+.red-svg {
+ fill: $red-text;
+}
+.white-svg {
+  fill: #fff;
+}
