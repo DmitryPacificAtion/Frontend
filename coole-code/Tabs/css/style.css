@@ -1,0 +1,35 @@
+ul{
+	list-style: none;
+}
+.tabs__controls{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.tabs__controls-item{
+	float: left;
+	margin-right: 20px;
+}
+.tabs__control-link{
+	display: block;
+	background-color: #996699;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.tabs__control-link:hover{
+	color: #0ff;
+	text-decoration: none;
+}
+.tabs__control-link:focus{
+	text-decoration: none;
+	color: #00ff88;
+}
+.tabs__list-item{
+	border: 1px dashed black;
+	padding: 20px;
+	display: none;
+}
+
+.active{
+	display: block;
+}
