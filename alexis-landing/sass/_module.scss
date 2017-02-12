@@ -44,27 +44,27 @@
       vertical-align: top;
       width: 30%;
       i {
-        height: 40px;
+        height: 41px;
         margin: 0 auto 40px;
-        width: 40px;
+        width: 41px;
       }
     }
     .fixed-price {
       color: $green-text;
       i {
-        background-position: 0 -1px;
+        background-position: -1px -2px;
       }
     }
     .recieve-time {
       color:$purple-text;
       i {
-        background-position: -42.5px 0px;
+        background-position: -43px -2px;
       }
     }
     .satisfaction {
       color: $orange-text;
       i {
-        background-position: -85px 0px;
+        background-position: -86px -2px;
       }
     }
   }
@@ -113,7 +113,7 @@
     display: inline-block;
     left: 50%;
     margin-left: -180px;
-   }
+  }
   &-item {
     background: #fff;
     display: inline-block;
@@ -125,21 +125,21 @@
       line-height: 25px; 
     }
     .web, .ux, .photo, .app { 
-      width: 56px;
-      height: 48px;
+      width: 58px;
+      height: 50px;
       margin: 60px auto 30px;
     }
     .web {
       background-position: -128px 6px;
     }
     .ux {
-      background-position: -187px -2px;
+      background-position: -185px -2px;
     }
     .photo {
-      background-position: -245px 5px;
+      background-position: -244px 4px;
     }
     .app {
-      background-position: -300px 3px;
+      background-position: -300px 5px;
     }
     @include respond-to($medium) {
       margin: 1% 2.5%;
@@ -148,16 +148,47 @@
     }
   }
 }
+.awesomness{
+  .container{
+    text-align: center;
+    h2{
+      color: white;
+      font: 30px/80px 'Poppins', Verdana, sans-serif;
+      position: absolute;
+    }
+    .click2play{
+      a{
+        color: #fff;
+        display: inline-block;
+        font: 400 15px/80px 'Poppins', Verdana, sans-serif;
+        text-decoration: none;
+      }
+      i{
+        background-position: -1px -46px;
+        height: 80px;
+        margin: 40px auto 0;
+        width: 80px;
+      }
+    }
+  }
+  .video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
 .footer-rainbow {
   .green-line, .orange-line, .purple-line, .red-line {
     @include set-cols-width(3);
-     @at-root {
+    @at-root {
       .green-line, .orange-line, .purple-line, .red-line { height: 3px; }
       .green-line { background-color: $green-text;}
       .orange-line { background-color: $orange-text;}
       .purple-line { background-color: $purple-text;}
       .red-line { background-color: $red-text;}
-     }
+    }
   }
 }
 
