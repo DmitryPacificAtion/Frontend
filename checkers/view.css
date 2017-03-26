@@ -1,0 +1,33 @@
+section {
+	border: 20px solid #333;
+	display: block;
+	max-width: 496px;
+	margin: 0 auto;
+}
+table {
+	border: 2px solid white;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+td {
+	height: 60px;
+	width: 60px;
+}
+tr:nth-child(odd) td:nth-child(even) {
+	background-color: #333;
+}
+tr:nth-child(even) td:nth-child(odd) {
+	background-color: #333;
+}
+
+td i, td em {
+	width: 60px;
+	height: 60px;
+	display: block;
+}
+.empire, .alias {
+	background: url("./sprite.png") no-repeat;
+}
+.alias {
+	background-position: -60px 0;
+}
