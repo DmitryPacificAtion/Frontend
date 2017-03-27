@@ -1,13 +1,17 @@
+body {
+	background-image: url(space.jpg);
+	background-size: cover;
+}
 section {
 	border: 20px solid #333;
+	background-color: #fff;
 	display: block;
 	max-width: 496px;
-	margin: 0 auto;
+	margin: 80px auto 0;
 }
 table {
 	border: 2px solid white;
 	border-collapse: collapse;
-	box-sizing: border-box;
 }
 td {
 	height: 60px;
@@ -19,15 +23,24 @@ tr:nth-child(odd) td:nth-child(even) {
 tr:nth-child(even) td:nth-child(odd) {
 	background-color: #333;
 }
-
-td i, td em {
+td i {
 	width: 60px;
 	height: 60px;
 	display: block;
 }
-.empire, .alias {
+.empire, .republic {
 	background: url("./sprite.png") no-repeat;
 }
-.alias {
-	background-position: -60px 0;
+.republic {
+	background-position: -64px 0;
+}
+.selected, .nextStep, .attack {
+	box-sizing: border-box;
+	border: 2px solid lime;
+}
+.nextStep {
+	border-color: blue;
+}
+.attack {
+	border-color: red;
 }
