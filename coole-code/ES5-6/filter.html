@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var animals = [
+		{ name: 'Floppy', species: 'rabbit'},
+		{ name: 'Poly', species: 'dog'},
+		{ name: 'Doly', species: 'dog'},
+		{ name: 'Harold', species: 'cat'},
+		{ name: 'Conomituso', species: 'fish'},
+		{ name: 'Mario', species: 'fish'}
+		]
+
+		// For
+		var dogs = [];
+		for (var i = 0; i < animals.length; i++) {
+			if (animals[i].species === 'dog') {}
+				dogs.push(animals[i]);
+		}
+
+		// Filter
+		var dogs2 = animals.filter(function(animal){
+			return animal.species === 'dog';
+		});
+
+
+		console.log(dogs);
+		console.log(dogs2);
+	</script>
+</body>
+</html>
