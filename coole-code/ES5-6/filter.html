@@ -18,8 +18,9 @@
 		// For
 		var dogs = [];
 		for (var i = 0; i < animals.length; i++) {
-			if (animals[i].species === 'dog') {}
+			if (animals[i].species === 'dog') {
 				dogs.push(animals[i]);
+			}
 		}
 
 		// Filter
@@ -27,6 +28,11 @@
 			return animal.species === 'dog';
 		});
 
+		// Or one more variant
+		var isDog = function(animal) {
+			return animal.species === 'dog';
+		};
+		var dogs3 = animals.filter(isDog);
 
 		console.log(dogs);
 		console.log(dogs2);

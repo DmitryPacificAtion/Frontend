@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var animals = [
+		{ name: 'Floppy', species: 'rabbit'},
+		{ name: 'Poly', species: 'dog'},
+		{ name: 'Doly', species: 'dog'},
+		{ name: 'Harold', species: 'cat'},
+		{ name: 'Conomituso', species: 'fish'},
+		{ name: 'Mario', species: 'fish'}
+		]
+
+		// For
+		var names = [];
+		for (var i = 0; i < animals.length; i++) {
+			names.push(animals[i].name);
+		}
+
+		// Map
+		var names2 = animals.map(function(animal){
+			return animal.name;
+		});
+
+		// ES6 Map
+		var names2 = animals.map( animal => animal.name );
+
+		console.log(dogs);
+		console.log(dogs2);
+	</script>
+</body>
+</html>
