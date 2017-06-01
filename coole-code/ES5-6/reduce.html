@@ -22,7 +22,16 @@
 		console.log(totalAmount);
 
 		// Reduce
+		var totalAmount2 = orders.reduce(function(sum, order){
+			return sum + order.amount;
+		}, 0);
 
+		console.log(totalAmount2);
+
+		//Or one more variant
+		var totalAmount3 = orders.reduce( (sum, order) => sum + order.amount, 0);
+		
+		console.log(totalAmount3);
 	</script>
 </body>
 </html>
