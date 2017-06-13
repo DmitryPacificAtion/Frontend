@@ -1,22 +1,21 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	jq = require('jquery'),
-	watch = require('gulp-watch');
+sass = require('gulp-sass');
 
-var paths = {
-  sass: ['app/scss/**/*.scss']
+var path = {
+	src: {
+		sass: 'dev/sass/style.scss'
+	},
+	watch: {
+		sass: 'dev/sass/**/*.scss'
+	},
+	build: {
+		css: 'build/css/'
+	},
+	clean: './build'
 };
 
 gulp.task('sass', function(){
-	return gulp.src(paths)
-	.pipe(scss())
-	.pipe(gulp.dest('build/css'));
-	});
-
-gulp.task('watch', function() {
-  gulp.watch(paths.sass, ['sass']);
+	return gulp.src(path.src.sass)
+				.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+				.pipe(gulp.dest(path.build.css));
 });
-
-gulp.task('default', ['watch']);
-
-//TODO: а работает ли?
