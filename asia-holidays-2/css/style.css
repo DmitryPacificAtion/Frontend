@@ -55,8 +55,8 @@ line-height: 16px;
 .countries{
 	color: #41a1b9;
 	float: right;
-	padding: 22px 30px 0 0;
-
+	padding: 12px 30px 0 0;
+	margin-bottom: 12px
 	
 }
 .countries li{
